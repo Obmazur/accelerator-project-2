@@ -2,3 +2,17 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+// common
+
+@import "common/global";
+@import "common/fonts";
+@import "common/variables";
+@import "common/mixins";
+@import "common/typography";
+
+// blocks
+
+@import "blocks/button.scss";
+@import "blocks/page.scss";
+@import "blocks/header.scss";

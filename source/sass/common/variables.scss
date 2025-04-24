@@ -5,6 +5,7 @@ $font: "Montserrat", "Arial", sans-serif;
 
 // Viewports //
 
+$menu-width: 1439px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
 
@@ -18,7 +19,6 @@ $stroke-border: #2D383F;
 
 $grad-hero-slider: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0.33) 100%);
 $grad-tour-item: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 61.9%, rgba(0, 0, 0, 0.6) 100%);
-
 
 $disabled: #999999;
 $error: #ff121f;

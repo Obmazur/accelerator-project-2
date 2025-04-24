@@ -1,0 +1,12 @@
+.button {
+  @include link;
+  @include button-regular;
+  display: block;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  border: none;
+  background-color: $add-color;
+  color: $base-white;
+  cursor: pointer;
+}
