@@ -10,3 +10,54 @@
   color: $base-white;
   cursor: pointer;
 }
+
+.button-main {
+  @include button-regular;
+
+  min-width: 180px;
+  padding: 20px;
+  background-color: $add-color;
+
+  &:hover {
+    padding: 19px;
+    border: 1px solid $base-dark;
+    background-color: $base-white;
+    color: $base-dark;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: $base-white;
+    color: $base-dark;
+  }
+
+  &:active {
+    background-color: $active;
+    color: $base-white;
+  }
+
+  &:disabled,
+  &[aria-disabled="true"] {
+    background-color: $disabled;
+    pointer-events: none;
+  }
+}
+
+.button--pagination {
+  width: 16px;
+  height: 16px;
+  border: 1px solid $base-white;
+  border-radius: 50%;
+
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.button--pagination-active {
+  background-color: $base-white;
+}

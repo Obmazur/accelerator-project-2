@@ -97,8 +97,10 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 
     width: auto;
+    max-width: 650px;
   }
 }
 
@@ -115,7 +117,7 @@
     @include button-input;
 
     margin-bottom: 0;
-    margin-right: 30px;
+    margin-right: 20px;
 
     text-transform: none;
     letter-spacing: 0;
@@ -129,14 +131,36 @@
 .header__link {
   @include link;
 
+  max-width: 140px;
+  word-break: break-all;
+
   display: inline-block;
   width: auto;
 
   color: $base-white;
 
   @media (min-width: $desktop-width) {
-    padding: 10px 0;
-    margin: 13px 0;
+    padding: 3px 5px;
+    margin: 20px 0;
+
+    &:hover {
+      box-shadow: 0 1px $base-white;
+    }
+
+    &:focus {
+      outline: 1px solid $base-white;
+    }
+
+    &:active {
+      color: $active;
+      outline: none;
+      box-shadow: none;
+    }
+
+    &[aria-disabled="true"] {
+      color: $disabled;
+      pointer-events: none;
+    }
   }
 }
 
@@ -170,5 +194,24 @@
 
   @media (min-width: $desktop-width) {
     margin: 24px 0 20px;
+
+    &:hover {
+      opacity: 50%;
+    }
+
+    &:focus {
+      outline: none;
+      color: $base-dark;
+    }
+
+    &:active {
+      color: $active;
+      opacity: 1;
+    }
+
+    &[aria-disabled="true"] {
+      color: $disabled;
+      pointer-events: none;
+    }
   }
 }

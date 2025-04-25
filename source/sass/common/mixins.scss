@@ -13,6 +13,10 @@
   margin: 0;
 }
 
+@mixin paragraph {
+  margin: 0;
+}
+
 @mixin center {
   position: absolute;
   top: 50%;
