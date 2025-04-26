@@ -61,3 +61,41 @@
 .button--pagination-active {
   background-color: $base-white;
 }
+
+.button--swiper {
+  width: 37px;
+  height: 35px;
+
+
+  &:hover {
+    border: 1px solid $base-dark;
+    background-color: $base-white;
+
+    path {
+      fill: $base-dark;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    background-color: $base-white;
+
+    path {
+      fill: $base-dark;
+    }
+  }
+
+  &:active {
+    background-color: $active;
+    color: $base-white;
+
+    path {
+      fill: $base-white;
+    }
+  }
+
+  &:disabled {
+    background-color: $disabled;
+    pointer-events: none;
+  }
+}

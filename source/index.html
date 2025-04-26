@@ -91,7 +91,7 @@
                 <source type="image/webp" srcset="img/hero/kamtchatka-mobile.webp 1x, img/hero/kamtchatka-mobile@2x.webp 2x" width="320" height="568">
                 <source media="(min-width: 1440px)" type="image/jpeg" srcset="img/hero/kamtchatka-desktop.jpg 1x, img/hero/kamtchatka-desktop@2x.jpg 2x" width="1440" height="800">
                 <source media="(min-width: 768px)" type="image/jpeg" srcset="img/hero/kamtchatka-tablet.jpg 1x, img/hero/kamtchatka-tablet@2x.jpg 2x" width="768" height="1034">
-                <img class="hero__image" src="img/hero/kamtchatka-mobile.jpg" width="320" height="568" srcset="img/hero/kamtchatka-mobile@2x.jpg 2x" alt="Виды Кавказа.">
+                <img class="hero__image" src="img/hero/kamtchatka-mobile.jpg" width="320" height="568" srcset="img/hero/kamtchatka-mobile@2x.jpg 2x" alt="Виды Камчатки.">
               </picture>
               <div class="hero__wrapper">
                 <h2>Невероятная природа Камчатки</h2>
@@ -120,7 +120,7 @@
                 <source type="image/webp" srcset="img/hero/altai-mobile.webp 1x, img/hero/altai-mobile@2x.webp 2x" width="320" height="568">
                 <source media="(min-width: 1440px)" type="image/jpeg" srcset="img/hero/altai-desktop.jpg 1x, img/hero/altai-desktop@2x.jpg 2x" width="1440" height="800">
                 <source media="(min-width: 768px)" type="image/jpeg" srcset="img/hero/altai-tablet.jpg 1x, img/hero/altai-tablet@2x.jpg 2x" width="768" height="1034">
-                <img class="hero__image" src="img/hero/altai-mobile.jpg" width="320" height="568" srcset="img/hero/altai-mobile@2x.jpg 2x" alt="Виды Кавказа.">
+                <img class="hero__image" src="img/hero/altai-mobile.jpg" width="320" height="568" srcset="img/hero/altai-mobile@2x.jpg 2x" alt="Виды Алтая.">
               </picture>
               <div class="hero__wrapper">
                 <h2>Магические пейзажи Алтайского Края</h2>
@@ -137,10 +137,174 @@
               </div>
             </li>
           </ol>
+          <div class="hero__pagination swiper-pagination"></div>
         </div>
-        <!-- <div class="swiper-pagination"></div> -->
-        <div class="hero__pagination swiper-pagination"></div>
       </section>
+
+      <div class="page__first-background">
+        <section class="tours" data-test="tours">
+          <div class="tours__container">
+            <div class="tours__header">
+              <div class="tours__title">
+                <span class="tours__shadow-title" aria-hidden="true">Ближайшие туры</span>
+                <h2 class="tours__main-title">Ближайшие туры</h2>
+              </div>
+              <div class="tours__buttons">
+                <button class="tours__button tours__button--prev button button--swiper button--swiper-prev" type="button">
+                  <span class="visually-hidden">Назад</span>
+                  <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.646446 4.85355C0.451184 4.65829 0.451184 4.34171 0.646446 4.14645L3.82843 0.964466C4.02369 0.769204 4.34027 0.769204 4.53553 0.964466C4.7308 1.15973 4.7308 1.47631 4.53553 1.67157L1.70711 4.5L4.53553 7.32843C4.7308 7.52369 4.7308 7.84027 4.53553 8.03553C4.34027 8.2308 4.02369 8.2308 3.82843 8.03553L0.646446 4.85355ZM14 5H1V4H14V5Z" fill="#ffffff" />
+                  </svg>
+                </button>
+                <button class="tours__button tours__button--next button button--swiper button--swiper-next" type="button">
+                  <span class="visually-hidden">Далее</span>
+                  <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z" fill="#ffffff" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="tours__swiper swiper">
+              <ul class="tours__list swiper-wrapper">
+                <li class="tours__item swiper-slide">
+                  <div class="tours__wrapper tours__wrapper--first">
+                    <div class="tours__stats">
+                      <span class="tours__destination">Кавказ</span>
+                      <div class="tours__time">
+                        <span class="tours__days">4 дня</span>
+                        <span class="tours__nights">3 ночи</span>
+                      </div>
+                    </div>
+                    <h3 class="tours__name">Путешествие вокруг&nbsp;Эльбруса</h3>
+                    <div class="tours__more">
+                      <div class="tours__level">
+                        <span>Сложность:</span>
+                        <div class="tours__stars">
+                          <span class="tours__star tours__star--full"></span>
+                          <span class="tours__star tours__star--full"></span>
+                          <span class="tours__star tours__star--full"></span>
+                          <span class="tours__star tours__star--full"></span>
+                          <span class="tours__star tours__star--empty"></span>
+                        </div>
+                      </div>
+                      <div class="tours__dates">
+                        <span>Даты&nbsp;набора:</span>
+                        <b>12.06–19.06</b>
+                      </div>
+                      <div class="tours__size">
+                        <span>Группа:</span>
+                        <b>до 15 чел.</b>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="tours__item swiper-slide">
+                  <div class="tours__wrapper tours__wrapper--second">
+                    <div class="tours__stats">
+                      <span class="tours__destination">Алтай</span>
+                      <div class="tours__time">
+                      <span class="tours__days">14 дней</span>
+                      <span class="tours__nights">13 ночей</span>
+                      </div>
+                    </div>
+                    <h3 class="tours__name">Путь к подножию Белухи</h3>
+                    <div class="tours__more">
+                      <div class="tours__level">
+                        <span>Сложность:</span>
+                        <div class="tours__stars">
+                          <span class="tours__star tours__star--full"></span>
+                          <span class="tours__star tours__star--full"></span>
+                          <span class="tours__star tours__star--full"></span>
+                          <span class="tours__star tours__star--empty"></span>
+                          <span class="tours__star tours__star--empty"></span>
+                        </div>
+                      </div>
+                      <div class="tours__dates">
+                        <span>Даты&nbsp;набора:</span>
+                        <b>14.06–23.06</b>
+                      </div>
+                      <div class="tours__size">
+                        <span>Группа:</span>
+                        <b>до&nbsp;25&nbsp;чел.</b>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="tours__item swiper-slide">
+                  <div class="tours__wrapper tours__wrapper--third">
+                    <div class="tours__stats">
+                      <span class="tours__destination">Адыгея</span>
+                      <div class="tours__time">
+                        <span class="tours__days">7 дней</span>
+                        <span class="tours__nights">6 ночей</span>
+                      </div>
+                    </div>
+                    <h3 class="tours__name">Через Фишт к Чёрному морю и обратно</h3>
+                    <div class="tours__more">
+                      <div class="tours__level">
+                        <span>Сложность:</span>
+                        <div class="tours__stars">
+                          <span class="tours__star tours__star--full"></span>
+                          <span class="tours__star tours__star--full"></span>
+                          <span class="tours__star tours__star--full"></span>
+                          <span class="tours__star tours__star--full"></span>
+                          <span class="tours__star tours__star--empty"></span>
+                        </div>
+                      </div>
+                      <div class="tours__dates">
+                        <span>Даты&nbsp;набора:</span>
+                        <b>15.07–19.07</b>
+                      </div>
+                      <div class="tours__size">
+                        <span>Группа:</span>
+                        <b>до&nbsp;22&nbsp;чел.</b>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="tours__item swiper-slide">
+                  <div class="tours__wrapper tours__wrapper--fourth">
+                    <div class="tours__stats">
+                      <span class="tours__destination">Урал</span>
+                      <div class="tours__time">
+                        <span class="tours__days">9 дней</span>
+                        <span class="tours__nights">10 ночей</span>
+                      </div>
+                    </div>
+                    <h3 class="tours__name">Восхождение Манарага</h3>
+                    <div class="tours__more">
+                      <div class="tours__level">
+                        <span>Сложность:</span>
+                        <div class="tours__stars">
+                          <span class="tours__star tours__star--full"></span>
+                          <span class="tours__star tours__star--full"></span>
+                          <span class="tours__star tours__star--full"></span>
+                          <span class="tours__star tours__star--full"></span>
+                          <span class="tours__star tours__star--full"></span>
+                        </div>
+                      </div>
+                      <div class="tours__dates">
+                        <span>Даты&nbsp;набора:</span>
+                        <b>12.07–19.07</b>
+                      </div>
+                      <div class="tours__size">
+                        <span>Группа:</span>
+                        <b>до 7 чел.</b>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a class="tours__link" href="#">
+              Показать все туры
+              <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 13L7.5 7L1.5 1" stroke="#2D383F" stroke-width="2"/>
+                </svg>
+            </a>
+          </div>
+        </section>
+      </div>
 
     </main>
 
@@ -156,7 +320,7 @@
   <use href="/__spritemap#sprite-user"></use>
 </svg> -->
 <!-- примеры требуемых атрибутов data-test="*"
-<div data-test="tours">tours</div>
+<div >tours</div>
 <div data-test="training">training</div>
 <div data-test="about">about</div>
 <div data-test="reviews">reviews</div>

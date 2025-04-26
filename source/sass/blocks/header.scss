@@ -46,11 +46,11 @@
 }
 
 .header__nav--is-closed .header__button::before {
-  background-image: url("../../img/sprite/menu.svg");
+  background-image: url(/__spritemap#sprite-menu-view);
 }
 
 .header__nav--is-open .header__button::before {
-  background-image: url("../../img/sprite/cross.svg");
+  background-image: url(/__spritemap#sprite-cross-view);
 }
 
 .header__wrapper {
