@@ -1,0 +1,418 @@
+.training {
+  @media (min-width: $tablet-width) {
+    background-repeat: no-repeat;
+    background-position: right bottom 158px;
+    background-image: image-set(
+      url("../../img/background/clouds-2-tablet.webp") type("image/webp") 1x,
+      url("../../img/background/clouds-2-tablet@2x.webp") type("image/webp") 2x,
+      url("../../img/background/clouds-2-tablet.png") type("image/png") 1x,
+      url("../../img/background/clouds-2-tablet@2x.png") type("image/png") 2x,
+    );
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: right bottom -4px;
+    background-image: image-set(
+      url("../../img/background/clouds-2-desktop.webp") type("image/webp") 1x,
+      url("../../img/background/clouds-2-desktop@2x.webp") type("image/webp") 2x,
+      url("../../img/background/clouds-2-desktop.png") type("image/png") 1x,
+      url("../../img/background/clouds-2-desktop@2x.png") type("image/png") 2x,
+    );
+  }
+}
+
+.training__container {
+  @include block-center;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+}
+
+.training__title {
+  position: relative;
+
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.training__shadow-title {
+  @include title-h2;
+
+  display: inline-block;
+  opacity: 0.03;
+
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.training__main-title {
+  @include title-h3;
+  @include title;
+
+  position: absolute;
+  top: 16px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 17px;
+  }
+}
+
+.training__container p {
+  @include paragraph;
+  @include text-regular;
+
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 380px;
+    margin-bottom: 58px;
+  }
+}
+
+.training__header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    align-items: baseline;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+    align-items: flex-start;
+  }
+}
+
+.training__swiper-title {
+  @include title;
+  @include title-h3;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 4px;
+  }
+}
+
+.training__buttons {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 4px;
+  }
+}
+
+.training__swiper {
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+  }
+}
+
+.training__list {
+  @include list;
+}
+
+.training__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 356px;
+  padding: 14px;
+  border: 1px solid rgb(2, 102, 193, 0.2);
+
+  @media (min-width: $tablet-width) {
+    min-height: 388px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 356px;
+  }
+}
+
+.training__image {
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 182px;
+    object-fit: cover;
+    object-position: -32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 255px;
+    object-position: 0;
+  }
+}
+
+.training__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.training__info h4 {
+  @include title;
+  @include title-h7;
+
+  width: min-content;
+}
+
+.training__link {
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  margin-bottom: 8px;
+
+  border: 1px solid rgb(45, 56, 63, 0.3);
+
+  &:hover {
+    border-color: $base-dark;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: transparent;
+  }
+
+  &:active {
+    background-color: $add-color;
+    border-color: $add-color;
+
+    path {
+      fill: $base-white;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+.training__wrapper p {
+  @include paragraph;
+  @include text-xsmall;
+
+  line-height: 133%;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+}
+
+.training__secondary-title {
+  @include title;
+  @include title-h5;
+
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
+  }
+}
+
+.training__process {
+  @include list;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 6px;
+    width: 2px;
+    height: 183px;
+    background-color: $add-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 134px;
+    row-gap: 103px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    row-gap: 0;
+    column-gap: 0;
+    padding: 8px 0 22px;
+
+    &::before {
+      display: block;
+      top: auto;
+      bottom: 14px;
+      left: 34px;
+      width: calc(100% - 34px);
+      height: 2px;
+    }
+  }
+}
+
+.training__process-item {
+  position: relative;
+  padding-left: 29px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 11px;
+    left: 0;
+    background-color: $add-color;
+    border-radius: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      display: block;
+      top: auto;
+      bottom: -14px;
+      left: 20px;
+    }
+  }
+}
+
+.training__process-item--boot {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.training__process-item--pine-tree {
+  grid-row: 2/3;
+  grid-column: 2/3;
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      left: 0;
+    }
+  }
+}
+
+.training__process-item .training__text {
+  @include text-xsmall;
+  @include paragraph;
+
+  position: relative;
+  max-width: 235px;
+  padding-left: 34px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include text-small;
+
+    max-width: 231px;
+    padding-left: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text-regular;
+
+    padding-left: 45px;
+    padding-right: 5px;
+    max-width: 253px;
+
+    &::before {
+      left: 10px;
+    }
+  }
+}
+
+.training__text--map {
+  &::before {
+    background-image: url(/__spritemap#sprite-map-view);
+  }
+}
+
+.training__text--boot {
+  &::before {
+    background-image: url(/__spritemap#sprite-boot-view);
+  }
+}
+
+.training__process-item .training__text--boot {
+  &::before {
+    top: 2px;
+  }
+}
+
+.training__text--pine-tree {
+  &::before {
+    background-image: url(/__spritemap#sprite-pine-tree-view);
+  }
+}
+
+.training__text--mountains {
+  &::before {
+    background-image: url(/__spritemap#sprite-mountains-view);
+  }
+}

@@ -88,6 +88,13 @@
   }
 }
 
+@mixin title-h7 {
+  font-weight: 700;
+  font-size: 14px;
+
+  line-height: 114%;
+}
+
 // text
 @mixin text-big {
   font-weight: 400;

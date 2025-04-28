@@ -27,7 +27,7 @@ const heroSwiper = new Swiper('.hero__swiper', {
 
 const toursSwiper = new Swiper('.tours__swiper', {
   slidesPerView: 1,
-  spaceBetween: 0,
+  spaceBetween: 10,
   modules: [Navigation],
   navigation: {
     nextEl: '.tours__button--next',
@@ -41,6 +41,29 @@ const toursSwiper = new Swiper('.tours__swiper', {
     1440: {
       slidesPerView: 3,
       spaceBetween: 30,
+    },
+  }
+});
+
+const trainingSwiper = new Swiper('.training__swiper', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  initialSlide: 2,
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.training__button--next',
+    prevEl: '.training__button--prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      initialSlide: 0,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      initialSlide: 0,
     },
   }
 });
