@@ -67,3 +67,32 @@ const trainingSwiper = new Swiper('.training__swiper', {
     },
   }
 });
+
+const reviewsSwiper = new Swiper('.reviews__swiper', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
+  },
+  autoHeight: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 1.34,
+      spaceBetween: 30,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      slidesOffsetBefore: 45,
+      slidesOffsetAfter: 45,
+    },
+    1440: {
+      slidesPerView: 1.9,
+      spaceBetween: 120,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      slidesOffsetBefore: 130,
+      slidesOffsetAfter: 130,
+    },
+  }
+});
