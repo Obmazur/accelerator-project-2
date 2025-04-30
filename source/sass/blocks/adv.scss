@@ -1,0 +1,234 @@
+.adv__container {
+  @include block-center;
+  overflow: hidden;
+
+  padding-top: 23px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 106px 0 100px 0;
+  }
+}
+
+.adv__title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 19px;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.adv__shadow-title {
+  @include title-h2;
+
+  opacity: 0.03;
+}
+
+.adv__main-title {
+  @include title-h3;
+  @include title;
+
+  margin-top: -12px;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -25px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -26px;
+    margin-bottom: 0;
+  }
+}
+
+.adv__swiper-container {
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+
+    margin-bottom: 50px;
+
+    .adv__swiper {
+      overflow: visible;
+    }
+  }
+}
+
+.adv__list {
+  @include list;
+
+  flex-direction: column;
+  row-gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+
+.adv__item {
+  @media (min-width: $tablet-width) {
+    max-width: 324px;
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 380px;
+    margin-right: 0;
+  }
+}
+
+.adv__wrapper {
+  position: relative;
+  padding: 81px 9px 19px;
+  border: 1px solid rgb(2, 102, 193, 0.1);
+  text-align: center;
+  background-color: $base-white;
+  min-height: 239px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 340px;
+    padding: 102px 19px 29px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    min-height: 329px;
+    padding: 124px 19px 39px;
+  }
+
+  h3 {
+    @include title;
+    @include title-h6;
+
+    margin-bottom: 15px;
+    padding: 0 12px;
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
+
+  p {
+    @include paragraph;
+    @include text-small;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 19px;
+    left: calc((100% - 42px) / 2);
+    border: 1px solid $add-color;
+
+    @media (min-width: $tablet-width) {
+      width: 48px;
+      height: 48px;
+      top: 28px;
+      left: calc((100% - 48px) / 2);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 54px;
+      height: 54px;
+      top: 39px;
+      left: calc((100% - 54px) / 2);
+    }
+  }
+}
+
+.adv__wrapper--safety::before {
+  background: url(/__spritemap#sprite-shield-view) no-repeat center;
+  background-size: 24px 24px;
+}
+
+.adv__wrapper--exp::before {
+  background: url(/__spritemap#sprite-crown-view) no-repeat center;
+  background-size: 24px 24px;
+}
+
+.adv__wrapper--gear::before {
+  background: url(/__spritemap#sprite-boot-blue-view) no-repeat center;
+  background-size: 22px 20px;
+}
+
+.adv__wrapper--path::before {
+  background: url(/__spritemap#sprite-path-view) no-repeat center;
+  background-size: 24px 24px;
+}
+
+.adv__wrapper--ecology::before {
+  background: url(/__spritemap#sprite-leaf-view) no-repeat center;
+  background-size: 24px 18px;
+}
+
+.adv__wrapper--ecology {
+  h3 {
+    padding-left: 8px;
+  }
+
+  span {
+  padding-left: 4px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 102px;
+
+    h3 {
+        padding-left: 8px;
+    }
+
+    span {
+      padding-left: 4px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 123px;
+
+    h3 {
+      padding-left: 12px;
+    }
+  }
+}
+
+.adv__buttons {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 4px;
+  }
+}

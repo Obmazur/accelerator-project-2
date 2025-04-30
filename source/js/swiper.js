@@ -12,7 +12,8 @@ const heroSwiper = new Swiper('.hero__swiper', {
     el: '.hero__pagination',
     clickable: false,
     bulletActiveClass: 'button--pagination-active',
-    bulletClass: 'button--pagination'
+    bulletClass: 'button--pagination',
+    bulletElement: 'button',
   },
   breakpoints: {
     1440: {
@@ -93,6 +94,30 @@ const reviewsSwiper = new Swiper('.reviews__swiper', {
       centeredSlidesBounds: true,
       slidesOffsetBefore: 130,
       slidesOffsetAfter: 130,
+    },
+  }
+});
+
+const advSwiper = new Swiper('.adv__swiper', {
+  noSwiping: true,
+  noSwipingClass: 'swiper-slide',
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.adv__button--next',
+    prevEl: '.adv__button--prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1440: {
+      loop: true,
+      initialSlide: 2,
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 30,
+      loopAddBlankSlides: false,
+      slidesOffsetBefore: 120,
     },
   }
 });
