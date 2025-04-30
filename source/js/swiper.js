@@ -108,7 +108,10 @@ const advSwiper = new Swiper('.adv__swiper', {
   },
   breakpoints: {
     768: {
+      slidesOffsetBefore: 0,
+      centeredSlides: false,
       slidesPerView: 2,
+      spaceBetween: 0,
     },
     1440: {
       loop: true,
