@@ -637,6 +637,101 @@
 
       </div>
 
+      <section class="gallery" data-test="gallery" id="gallery">
+        <div class="gallery-container">
+          <div class="gallery-header">
+            <div class="gallery-text">
+              <div class="gallery__title">
+                <span class="gallery__shadow-title" aria-hidden="true">Фотогалерея</span>
+                <h2 class="gallery__main-title">Фотогалерея</h2>
+              </div>
+              <p>
+                Добавляйте фото с хэштегом #лайфтур, <br>а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.
+              </p>
+            </div>
+            <div class="gallery__buttons">
+              <button class="gallery__button gallery__button--prev button button--swiper" type="button">
+                <span class="visually-hidden">Назад</span>
+                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.646446 4.85355C0.451184 4.65829 0.451184 4.34171 0.646446 4.14645L3.82843 0.964466C4.02369 0.769204 4.34027 0.769204 4.53553 0.964466C4.7308 1.15973 4.7308 1.47631 4.53553 1.67157L1.70711 4.5L4.53553 7.32843C4.7308 7.52369 4.7308 7.84027 4.53553 8.03553C4.34027 8.2308 4.02369 8.2308 3.82843 8.03553L0.646446 4.85355ZM14 5H1V4H14V5Z" fill="#ffffff" />
+                </svg>
+              </button>
+              <button class="gallery__button gallery__button--next button button--swiper" type="button">
+                <span class="visually-hidden">Далее</span>
+                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z" fill="#ffffff" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__swiper swiper">
+          <ul class="gallery__list swiper-wrapper">
+            <li class="gallery__item swiper-slide">
+              <div class="gallery__wrapper">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/webp" srcset="img/gallery/photo-1-desktop.webp 1x, img/gallery/photo-1-desktop@2x.webp 2x" width="284" height="463">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/photo-1-tablet.webp 1x, img/gallery/photo-1-tablet@2x.webp 2x" width="253" height="418">
+                  <source type="image/webp" srcset="img/gallery/photo-1-mobile.webp 1x, img/gallery/photo-1-mobile@2x.webp 2x" width="158" height="266">
+                  <source media="(min-width: 1440px)" type="image/jpeg" srcset="img/gallery/photo-1-desktop.jpg 1x, img/gallery/photo-1-desktop@2x.jpg 2x" width="284" height="463">
+                  <source media="(min-width: 768px)" type="image/jpeg" srcset="img/gallery/photo-1-tablet.jpg 1x, img/gallery/photo-1-tablet@2x.jpg 2x" width="253" height="418">
+                  <img class="gallery__image" src="img/gallery/photo-1-mobile.jpg" width="158" height="266" srcset="img/gallery/photo-1-mobile@2x.jpg 2x" alt="Альпинист на горе.">
+                </picture>
+              </div>
+            </li>
+            <li class="gallery__item swiper-slide">
+              <div class="gallery__wrapper gallery__wrapper--rows">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/webp" srcset="img/gallery/photo-2-desktop.webp 1x, img/gallery/photo-2-desktop@2x.webp 2x" width="284" height="233">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/photo-2-tablet.webp 1x, img/gallery/photo-2-tablet@2x.webp 2x" width="252" height="210">
+                  <source type="image/webp" srcset="img/gallery/photo-2-mobile.webp 1x, img/gallery/photo-2-mobile@2x.webp 2x" width="157" height="135">
+                  <source media="(min-width: 1440px)" type="image/jpeg" srcset="img/gallery/photo-2-desktop.jpg 1x, img/gallery/photo-2-desktop@2x.jpg 2x" width="284" height="233">
+                  <source media="(min-width: 768px)" type="image/jpeg" srcset="img/gallery/photo-2-tablet.jpg 1x, img/gallery/photo-2-tablet@2x.jpg 2x" width="252" height="210">
+                  <img class="gallery__image" src="img/gallery/photo-2-mobile.jpg" width="157" height="135" srcset="img/gallery/photo-2-mobile@2x.jpg 2x" alt="Альпинист на горе.">
+                </picture>
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/webp" srcset="img/gallery/photo-3-desktop.webp 1x, img/gallery/photo-3-desktop@2x.webp 2x" width="284" height="223">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/photo-3-tablet.webp 1x, img/gallery/photo-3-tablet@2x.webp 2x" width="252" height="202">
+                  <source type="image/webp" srcset="img/gallery/photo-3-mobile.webp 1x, img/gallery/photo-3-mobile@2x.webp 2x" width="157" height="125">
+                  <source media="(min-width: 1440px)" type="image/jpeg" srcset="img/gallery/photo-3-desktop.jpg 1x, img/gallery/photo-3-desktop@2x.jpg 2x" width="284" height="223">
+                  <source media="(min-width: 768px)" type="image/jpeg" srcset="img/gallery/photo-3-tablet.jpg 1x, img/gallery/photo-3-tablet@2x.jpg 2x" width="252" height="202">
+                  <img class="gallery__image gallery__image--second-row" src="img/gallery/photo-3-mobile.jpg" width="157" height="125" srcset="img/gallery/photo-3-mobile@2x.jpg 2x" alt="Альпинист на горе.">
+                </picture>
+              </div>
+            </li>
+            <li class="gallery__item swiper-slide">
+              <div class="gallery__wrapper">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/webp" srcset="img/gallery/photo-4-desktop.webp 1x, img/gallery/photo-4-desktop@2x.webp 2x" width="284" height="463">
+                  <source type="image/webp" srcset="img/gallery/photo-4-tablet.webp 1x, img/gallery/photo-4-tablet@2x.webp 2x" width="158" height="266">
+                  <source media="(min-width: 1440px)" type="image/jpeg" srcset="img/gallery/photo-4-desktop.jpg 1x, img/gallery/photo-4-desktop@2x.jpg 2x" width="284" height="463">
+                  <img class="gallery__image" src="img/gallery/photo-4-tablet.jpg" width="158" height="266" srcset="img/gallery/photo-4-tablet@2x.jpg 2x" alt="Альпинист на горе.">
+                </picture>
+              </div>
+            </li>
+            <li class="gallery__item swiper-slide">
+              <div class="gallery__wrapper gallery__wrapper--rows">
+                <picture>
+                  <source type="image/webp" srcset="img/gallery/photo-5.webp 1x, img/gallery/photo-5@2x.webp 2x" width="157" height="135">
+                  <img class="gallery__image" src="img/gallery/photo-5.jpg" width="157" height="135" srcset="img/gallery/photo-5@2x.jpg 2x" alt="Альпинист на горе.">
+                </picture>
+                <picture>
+                  <source type="image/webp" srcset="img/gallery/photo-6.webp 1x, img/gallery/photo-6@2x.webp 2x" width="157" height="124">
+                  <img class="gallery__image gallery__image--second-row" src="img/gallery/photo-6.jpg" width="157" height="124" srcset="img/gallery/photo-6@2x.jpg 2x" alt="Альпинист на горе.">
+                </picture>
+              </div>
+            </li>
+            <li class="gallery__item swiper-slide">
+              <div class="gallery__wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/gallery/photo-7.webp 1x, img/gallery/photo-7@2x.webp 2x" width="158" height="266">
+                  <img class="gallery__image" src="img/gallery/photo-7.jpg" width="158" height="266" srcset="img/gallery/photo-7@2x.jpg 2x" alt="Альпинист на горе.">
+                </picture>
+              </div>
+            </li>
+          </ul>
+      </section>
+
     </main>
 
     <div class="page__overlay"></div>
@@ -651,8 +746,6 @@
   <use href="/__spritemap#sprite-user"></use>
 </svg> -->
 <!-- примеры требуемых атрибутов data-test="*"
-<div >adv</div>
-<div data-test="gallery">gallery</div>
 <div data-test="form">form</div>
 <div data-test="footer">footer</div>
 -->
