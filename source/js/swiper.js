@@ -100,8 +100,10 @@ const reviewsSwiper = new Swiper('.reviews__swiper', {
 
 const breakpointDesktop = window.matchMedia('(min-width: 1440px)');
 
+let advSwiper;
+
 const initAdvSwiper = () => {
-  const advSwiper = new Swiper('.adv__swiper', {
+  advSwiper = new Swiper('.adv__swiper', {
     modules: [Navigation],
     navigation: {
       nextEl: '.adv__button--next',
@@ -116,7 +118,11 @@ const initAdvSwiper = () => {
 };
 
 breakpointDesktop.addEventListener('change', () => {
-  initAdvSwiper();
+  if (window.innerWidth >= 1440) {
+    initAdvSwiper();
+  } else {
+    advSwiper.destroy();
+  }
 });
 
 window.addEventListener('load', () => {
