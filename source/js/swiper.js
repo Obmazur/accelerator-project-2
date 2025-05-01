@@ -98,29 +98,44 @@ const reviewsSwiper = new Swiper('.reviews__swiper', {
   }
 });
 
-const advSwiper = new Swiper('.adv__swiper', {
-  noSwiping: true,
-  noSwipingClass: 'swiper-slide',
-  modules: [Navigation],
-  navigation: {
-    nextEl: '.adv__button--next',
-    prevEl: '.adv__button--prev',
-  },
-  breakpoints: {
-    768: {
-      slidesOffsetBefore: 0,
-      centeredSlides: false,
-      slidesPerView: 2,
-      spaceBetween: 0,
-    },
-    1440: {
+const breakpointDesktop = window.matchMedia('(min-width: 1440px)');
+let advSwiper;
+
+window.addEventListener('resize', () => {
+  if (breakpointDesktop.matches) {
+    advSwiper.destroy();
+    advSwiper = new Swiper('.adv__swiper', {
+      modules: [Navigation],
+      navigation: {
+        nextEl: '.adv__button--next',
+        prevEl: '.adv__button--prev',
+      },
       loop: true,
       initialSlide: 2,
       slidesPerView: 3,
       centeredSlides: true,
       spaceBetween: 30,
-      loopAddBlankSlides: false,
-      slidesOffsetBefore: 120,
-    },
+    });
+  } else {
+    advSwiper.destroy();
+  }
+});
+
+window.addEventListener('load', () => {
+  if (breakpointDesktop.matches) {
+    advSwiper = new Swiper('.adv__swiper', {
+      modules: [Navigation],
+      navigation: {
+        nextEl: '.adv__button--next',
+        prevEl: '.adv__button--prev',
+      },
+      loop: true,
+      initialSlide: 2,
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 30,
+    });
+  } else {
+    advSwiper.destroy();
   }
 });
