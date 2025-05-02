@@ -687,7 +687,7 @@
                   <source type="image/webp" srcset="img/gallery/photo-2-mobile.webp 1x, img/gallery/photo-2-mobile@2x.webp 2x" width="157" height="135">
                   <source media="(min-width: 1440px)" type="image/jpeg" srcset="img/gallery/photo-2-desktop.jpg 1x, img/gallery/photo-2-desktop@2x.jpg 2x" width="284" height="233">
                   <source media="(min-width: 768px)" type="image/jpeg" srcset="img/gallery/photo-2-tablet.jpg 1x, img/gallery/photo-2-tablet@2x.jpg 2x" width="252" height="210">
-                  <img class="gallery__image" src="img/gallery/photo-2-mobile.jpg" width="157" height="135" srcset="img/gallery/photo-2-mobile@2x.jpg 2x" alt="Альпинист на горе.">
+                  <img class="gallery__image" src="img/gallery/photo-2-mobile.jpg" width="157" height="135" srcset="img/gallery/photo-2-mobile@2x.jpg 2x" alt="Посиделки у костра.">
                 </picture>
                 <picture>
                   <source media="(min-width: 1440px)" type="image/webp" srcset="img/gallery/photo-3-desktop.webp 1x, img/gallery/photo-3-desktop@2x.webp 2x" width="284" height="223">
@@ -695,7 +695,7 @@
                   <source type="image/webp" srcset="img/gallery/photo-3-mobile.webp 1x, img/gallery/photo-3-mobile@2x.webp 2x" width="157" height="125">
                   <source media="(min-width: 1440px)" type="image/jpeg" srcset="img/gallery/photo-3-desktop.jpg 1x, img/gallery/photo-3-desktop@2x.jpg 2x" width="284" height="223">
                   <source media="(min-width: 768px)" type="image/jpeg" srcset="img/gallery/photo-3-tablet.jpg 1x, img/gallery/photo-3-tablet@2x.jpg 2x" width="252" height="202">
-                  <img class="gallery__image gallery__image--second-row" src="img/gallery/photo-3-mobile.jpg" width="157" height="125" srcset="img/gallery/photo-3-mobile@2x.jpg 2x" alt="Альпинист на горе.">
+                  <img class="gallery__image gallery__image--second-row" src="img/gallery/photo-3-mobile.jpg" width="157" height="125" srcset="img/gallery/photo-3-mobile@2x.jpg 2x" alt="Компас.">
                 </picture>
               </div>
             </li>
@@ -705,7 +705,7 @@
                   <source media="(min-width: 1440px)" type="image/webp" srcset="img/gallery/photo-4-desktop.webp 1x, img/gallery/photo-4-desktop@2x.webp 2x" width="284" height="463">
                   <source type="image/webp" srcset="img/gallery/photo-4-tablet.webp 1x, img/gallery/photo-4-tablet@2x.webp 2x" width="158" height="266">
                   <source media="(min-width: 1440px)" type="image/jpeg" srcset="img/gallery/photo-4-desktop.jpg 1x, img/gallery/photo-4-desktop@2x.jpg 2x" width="284" height="463">
-                  <img class="gallery__image" src="img/gallery/photo-4-tablet.jpg" width="158" height="266" srcset="img/gallery/photo-4-tablet@2x.jpg 2x" alt="Альпинист на горе.">
+                  <img class="gallery__image" src="img/gallery/photo-4-tablet.jpg" width="158" height="266" srcset="img/gallery/photo-4-tablet@2x.jpg 2x" alt="Восхождение с тросом.">
                 </picture>
               </div>
             </li>
@@ -713,11 +713,11 @@
               <div class="gallery__wrapper gallery__wrapper--rows">
                 <picture>
                   <source type="image/webp" srcset="img/gallery/photo-5.webp 1x, img/gallery/photo-5@2x.webp 2x" width="157" height="135">
-                  <img class="gallery__image" src="img/gallery/photo-5.jpg" width="157" height="135" srcset="img/gallery/photo-5@2x.jpg 2x" alt="Альпинист на горе.">
+                  <img class="gallery__image" src="img/gallery/photo-5.jpg" width="157" height="135" srcset="img/gallery/photo-5@2x.jpg 2x" alt="Зимнее восхождение.">
                 </picture>
                 <picture>
                   <source type="image/webp" srcset="img/gallery/photo-6.webp 1x, img/gallery/photo-6@2x.webp 2x" width="157" height="124">
-                  <img class="gallery__image gallery__image--second-row" src="img/gallery/photo-6.jpg" width="157" height="124" srcset="img/gallery/photo-6@2x.jpg 2x" alt="Альпинист на горе.">
+                  <img class="gallery__image gallery__image--second-row" src="img/gallery/photo-6.jpg" width="157" height="124" srcset="img/gallery/photo-6@2x.jpg 2x" alt="Палатка в ночи.">
                 </picture>
               </div>
             </li>
@@ -725,11 +725,33 @@
               <div class="gallery__wrapper">
                 <picture>
                   <source type="image/webp" srcset="img/gallery/photo-7.webp 1x, img/gallery/photo-7@2x.webp 2x" width="158" height="266">
-                  <img class="gallery__image" src="img/gallery/photo-7.jpg" width="158" height="266" srcset="img/gallery/photo-7@2x.jpg 2x" alt="Альпинист на горе.">
+                  <img class="gallery__image" src="img/gallery/photo-7.jpg" width="158" height="266" srcset="img/gallery/photo-7@2x.jpg 2x" alt="Разговор в лесу.">
                 </picture>
               </div>
             </li>
           </ul>
+      </section>
+
+      <section class="form" data-test="form">
+        <div class="form__container">
+          <form class="form__body" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+            <h2>Остались вопросы?</h2>
+            <p>Заполните форму и наш оператор свяжется с вами&nbsp;для консультации.</p>
+            <div class="form__wrapper">
+              <div class="form__fields">
+                <label class="form__label">
+                  <span class="visually-hidden">Телефон</span>
+                  <input class="form__field form__field--tel" type="tel" name="phone" placeholder="Телефон" pattern="^(\+7|7|8)?[\s\-]?\(?[0-9]{3}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" autocomplete="off" required>
+                </label>
+                <label class="form__label">
+                  <span class="visually-hidden">Электронная почта</span>
+                  <input class="form__field form__field--email" type="email" name="email" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Zа-яА-Я]{2,4}$" autocomplete="off" required>
+                </label>
+              </div>
+              <button class="form__button button button-main" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
       </section>
 
     </main>
