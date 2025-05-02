@@ -754,6 +754,42 @@
         </div>
       </section>
 
+      <div data-test="footer">
+        <section class="contacts" id="contacts">
+          <div class="contacts__container">
+            <div class="contacts__body">
+              <div class="contacts__title">
+                <span class="contacts__shadow-title" aria-hidden="true">Контакты</span>
+                <h2 class="contacts__main-title">Контакты</h2>
+              </div>
+              <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+              <ul class="contacts__list">
+                <li class="contacts__item contacts__item--tel">
+                  <h3 class="contacts__header">Телефон</h3>
+                  <a class="contacts__link contacts__text" href="tel:7983745-45-45">+7 983 745-45-45</a>
+                </li>
+                <li class="contacts__item contacts__item--email">
+                  <h3 class="contacts__header">Email</h3>
+                  <a class="contacts__link contacts__text" href="mailto:info@lifetour.com">info@lifetour.com</a>
+                </li>
+                <li class="contacts__item contacts__item--address">
+                  <h3 class="contacts__header">Адрес</h3>
+                  <span class="contacts__text">г. Москва, пр-т Мира, д. 14, офис 101</span>
+                </li>
+              </ul>
+            </div>
+            <picture>
+              <source media="(min-width: 1440px)" type="image/webp" srcset="img/contacts/map-desktop.webp 1x, img/contacts/map-desktop@2x.webp 2x" width="600" height="324">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/contacts/map-tablet.webp 1x, img/contacts/map-tablet@2x.webp 2x" width="768" height="340">
+              <source type="image/webp" srcset="img/contacts/map-mobile.webp 1x, img/contacts/map-mobile@2x.webp 2x" width="320" height="343">
+              <source media="(min-width: 1440px)" type="image/jpeg" srcset="img/gallery/photo-1-desktop.jpg 1x, img/contacts/map-desktop@2x.jpg 2x" width="600" height="324">
+              <source media="(min-width: 768px)" type="image/jpeg" srcset="img/gallery/photo-1-tablet.jpg 1x, img/contacts/map-tablet@2x.jpg 2x" width="768" height="340">
+              <img class="contacts__map" src="img/contacts/map-mobile.jpg" width="320" height="343" srcset="img/contacts/map-mobile@2x.jpg 2x" alt="Альпинист на горе.">
+            </picture>
+          </div>
+        </section>
+      </div>
+
     </main>
 
     <div class="page__overlay"></div>
@@ -767,7 +803,3 @@
 <svg>
   <use href="/__spritemap#sprite-user"></use>
 </svg> -->
-<!-- примеры требуемых атрибутов data-test="*"
-<div data-test="form">form</div>
-<div data-test="footer">footer</div>
--->
