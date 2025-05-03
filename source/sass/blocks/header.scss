@@ -37,7 +37,7 @@
 }
 
 .header__button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -46,11 +46,11 @@
 }
 
 .header__nav--is-closed .header__button::before {
-  background-image: url(/__spritemap#sprite-menu-view);
+  background-image: url("/__spritemap#sprite-menu-view");
 }
 
 .header__nav--is-open .header__button::before {
-  background-image: url(/__spritemap#sprite-cross-view);
+  background-image: url("/__spritemap#sprite-cross-view");
 }
 
 .header__wrapper {

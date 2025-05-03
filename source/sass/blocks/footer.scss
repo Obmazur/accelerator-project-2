@@ -1,5 +1,6 @@
 .footer-container {
   @include block-center;
+
   padding-top: 23px;
   padding-bottom: 16px;
 
@@ -51,6 +52,7 @@
 
 .footer__list {
   @include list;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px 50px;
@@ -91,10 +93,6 @@
 
   @media (min-width: $tablet-width) {
     min-width: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -139,13 +137,14 @@
     color: $add-color;
   }
 
-  &[aria-disabled='true'] {
+  &[aria-disabled="true"] {
     color: $disabled;
   }
 }
 
 .footer__phone {
   @include title-h6;
+
   display: none;
 
   margin-left: auto;
@@ -153,6 +152,25 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+  }
+
+  &:hover {
+    box-shadow: none;
+    color: rgb(2, 102, 193, 0.1);
+  }
+
+  &:focus {
+    color: $add-color;
+    outline: none;
+  }
+
+  &:active {
+    color: $active;
+  }
+
+  &:disabled {
+    color: $disabled;
+    pointer-events: none;
   }
 }
 

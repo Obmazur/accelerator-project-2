@@ -127,7 +127,7 @@
   border: 1px solid rgb(255, 255, 255, 0.5);
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 12px;
     height: 12px;
@@ -137,11 +137,11 @@
 }
 
 .hero__info--length::before {
-  background: url(/__spritemap#sprite-moon-view) no-repeat center;
+  background: url("/__spritemap#sprite-moon-view") no-repeat center;
 }
 
 .hero__info--level::before {
-  background: url(/__spritemap#sprite-level-view) no-repeat center;
+  background: url("/__spritemap#sprite-level-view") no-repeat center;
 }
 
 .hero__pagination {

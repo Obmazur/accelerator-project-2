@@ -3,7 +3,7 @@ const fieldElements = document.querySelectorAll('.form__field');
 const telFieldElement = document.querySelector('.form__field--tel');
 const emailFieldElement = document.querySelector('.form__field--email');
 
-const TEL_REGEX = /(\+7|7|8)?[\s\-]?\(?[0-9]{3}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}/;
+const TEL_REGEX = /(\+7|7|8)?[\s-]?\(?[0-9]{3}\)?[\s-]?[0-9]{3}[\s-]?[0-9]{2}[\s-]?[0-9]{2}/;
 const EMAIL_REGEX = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Zа-яА-Я]{2,4}$/;
 
 formButtonElement.addEventListener('click', (evt) => {

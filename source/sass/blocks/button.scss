@@ -1,6 +1,7 @@
 .button {
   @include link;
   @include button-regular;
+
   display: block;
   position: relative;
   padding: 0;

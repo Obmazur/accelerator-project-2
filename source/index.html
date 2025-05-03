@@ -21,7 +21,7 @@
 
     <header class="header" data-test="header">
       <div class="header__container">
-        <nav class="header__nav header__nav--is-closed">
+        <nav class="header__nav header__nav--is-closed" aria-label="Навигация по сайту">
           <button class="header__button button js-toggle-button" type="button">
             <span class="visually-hidden">Открыть/Закрыть меню сайта.</span>
           </button>
@@ -316,7 +316,7 @@
               Обучение проводится квалифицированными специалистами, за плечами&nbsp;которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.
             </p>
             <div class="training__header">
-              <h3 class="training__swiper-title">Наши инструкторы</h2>
+              <h3 class="training__swiper-title">Наши инструкторы</h3>
               <div class="training__buttons">
                 <button class="training__button training__button--prev button button--swiper" type="button">
                   <span class="visually-hidden">Назад</span>
@@ -730,6 +730,7 @@
               </div>
             </li>
           </ul>
+        </div>
       </section>
 
       <section class="form" data-test="form">
@@ -790,9 +791,9 @@
         </div>
       </section>
 
-      <section class="footer">
+      <div class="footer">
         <div class="footer-container">
-          <nav class="footer__nav">
+          <nav class="footer__nav" aria-label="Навигация по сайту в футере">
             <img class="footer__logo" src="/__spritemap#sprite-logo-dark-view" width="142" height="42" alt="Логотип туристического агентства Lifetour">
             <ul class="footer__list">
               <li class="footer__item">
@@ -846,7 +847,7 @@
           </ul>
           <a class="footer__link footer__link--policy" href="#">Политика конфиденциальности</a>
         </div>
-      </section>
+      </div>
     </footer>
 
     <div class="page__overlay"></div>

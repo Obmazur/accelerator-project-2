@@ -110,50 +110,46 @@
   background-color: $base-dark;
 
   color: $base-white;
-
-  @media (min-width: $tablet-width) {
-
-  }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .tours__wrapper--first {
-  background-image: image-set(
-    url("../../img/tours/tour-1.webp") type("image/webp") 1x,
-    url("../../img/tours/tour-1@2x.webp") type("image/webp") 2x,
-    url("../../img/tours/tour-1.jpg") type("image/jpeg") 1x,
-    url("../../img/tours/tour-1@2x.jpg") type("image/jpeg") 2x,
-  );
+  background-image:
+    image-set(
+      url("../../img/tours/tour-1.webp") type("image/webp") 1x,
+      url("../../img/tours/tour-1@2x.webp") type("image/webp") 2x,
+      url("../../img/tours/tour-1.jpg") type("image/jpeg") 1x,
+      url("../../img/tours/tour-1@2x.jpg") type("image/jpeg") 2x,
+    );
 }
 
 .tours__wrapper--second {
-  background-image: image-set(
-    url("../../img/tours/tour-2.webp") type("image/webp") 1x,
-    url("../../img/tours/tour-2@2x.webp") type("image/webp") 2x,
-    url("../../img/tours/tour-2.jpg") type("image/jpeg") 1x,
-    url("../../img/tours/tour-2@2x.jpg") type("image/jpeg") 2x,
-  );
+  background-image:
+    image-set(
+      url("../../img/tours/tour-2.webp") type("image/webp") 1x,
+      url("../../img/tours/tour-2@2x.webp") type("image/webp") 2x,
+      url("../../img/tours/tour-2.jpg") type("image/jpeg") 1x,
+      url("../../img/tours/tour-2@2x.jpg") type("image/jpeg") 2x,
+    );
 }
 
 .tours__wrapper--third {
-  background-image: image-set(
-    url("../../img/tours/tour-3.webp") type("image/webp") 1x,
-    url("../../img/tours/tour-3@2x.webp") type("image/webp") 2x,
-    url("../../img/tours/tour-3.jpg") type("image/jpeg") 1x,
-    url("../../img/tours/tour-3@2x.jpg") type("image/jpeg") 2x,
-  );
+  background-image:
+    image-set(
+      url("../../img/tours/tour-3.webp") type("image/webp") 1x,
+      url("../../img/tours/tour-3@2x.webp") type("image/webp") 2x,
+      url("../../img/tours/tour-3.jpg") type("image/jpeg") 1x,
+      url("../../img/tours/tour-3@2x.jpg") type("image/jpeg") 2x,
+    );
 }
 
 .tours__wrapper--fourth {
-  background-image: image-set(
-    url("../../img/tours/tour-4.webp") type("image/webp") 1x,
-    url("../../img/tours/tour-4@2x.webp") type("image/webp") 2x,
-    url("../../img/tours/tour-4.jpg") type("image/jpeg") 1x,
-    url("../../img/tours/tour-4@2x.jpg") type("image/jpeg") 2x,
-  );
+  background-image:
+    image-set(
+      url("../../img/tours/tour-4.webp") type("image/webp") 1x,
+      url("../../img/tours/tour-4@2x.webp") type("image/webp") 2x,
+      url("../../img/tours/tour-4.jpg") type("image/jpeg") 1x,
+      url("../../img/tours/tour-4@2x.jpg") type("image/jpeg") 2x,
+    );
 }
 
 .tours__stats {
@@ -167,10 +163,6 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 16px;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .tours__destination {
@@ -182,13 +174,13 @@
   background-color: $add-color;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 9px;
     height: 12px;
     top: 8px;
     left: 16px;
-    background: url(/__spritemap#sprite-pin-view) no-repeat center;
+    background: url("/__spritemap#sprite-pin-view") no-repeat center;
   }
 }
 
@@ -203,7 +195,7 @@
   padding: 4px 0 4px 32px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 20px;
     height: 20px;
@@ -216,13 +208,13 @@
   margin-right: 14px;
 
   &::before {
-    background: url(/__spritemap#sprite-sun-view) no-repeat center;
+    background: url("/__spritemap#sprite-sun-view") no-repeat center;
   }
 }
 
 .tours__nights {
   &::before {
-    background: url(/__spritemap#sprite-moon-view) no-repeat center;
+    background: url("/__spritemap#sprite-moon-view") no-repeat center;
   }
 }
 
@@ -238,7 +230,7 @@
   line-height: 117%;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 80px;
     height: 1px;
@@ -276,8 +268,8 @@
 }
 
 .tours__level span {
-    margin-bottom: 4px;
-  }
+  margin-bottom: 4px;
+}
 
 .tours__stars {
   display: flex;
@@ -294,11 +286,11 @@
 }
 
 .tours__star--full {
-  background: url(/__spritemap#sprite-star-full-view) no-repeat left;
+  background: url("/__spritemap#sprite-star-full-view") no-repeat left;
 }
 
 .tours__star--empty {
-  background: url(/__spritemap#sprite-star-empty-view) no-repeat left;
+  background: url("/__spritemap#sprite-star-empty-view") no-repeat left;
 }
 
 .tours__link {
@@ -335,15 +327,6 @@
 
     path {
       stroke: $active;
-    }
-  }
-
-  &[aria-disabled="true"] {
-    pointer-events: none;
-    color: $disabled;
-
-    path {
-      stroke: $disabled;
     }
   }
 }
